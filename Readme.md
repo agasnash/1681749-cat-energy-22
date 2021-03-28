@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Gasnas Andrei](https://up.htmlacademy.ru/adaptive/22/user/1681749).
-* Наставник: `Неизвестно`.
+* Наставник: [Тина Кузьменко](https://htmlacademy.ru/profile/tina_kuzmenko).
 
 ---
 
