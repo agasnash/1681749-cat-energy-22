@@ -49,47 +49,48 @@
       <h2 class="visually-hidden">Форма подбора программы</h2>
       <form class="food-program__form" method="get" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="basic-info block-title">
+        <fieldset class="form-block">
           <legend class="visually-hidden">Основная информация</legend>
-          <div class="basic-info__wrapper-inputs">
-            <div class="basic-info__input">
+          <div class="form-block__wrapper-inputs">
+            <div class="form-block__input">
               <label class="form-label" for="name">Имя:*</label>
               <input class="form-input" id="name" type="text" name="name" placeholder="Барсик">
             </div>
-            <div class="basic-info__input">
-              <label class="form-label" for="weight">Вес (кг):*</label>
+            <div class="form-block__input">
+              <label class="form-label form-label-type" for="weight">Вес (кг):*</label>
               <input class="form-input" id="weight" type="number" name="weight" value="7">
             </div>
-            <div class="basic-info__input">
+            <div class="form-block__input">
               <label class="form-label" for="age">Возраст (лет):</label>
               <input class="form-input" id="age" type="number" name="age" value="7">
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="basic-options">
-          <ul class="basic-options__list">
-            <li class="basic-options__item">
+        <fieldset class="form-block">
+          <legend class="visually-hidden">Цель программы</legend>
+          <ul class="form-block__list">
+            <li class="form-block__item">
               <input type="radio" id="loose-weight" name="weight" value="loose-weight" checked>
-              <label for="loose-weight">Похудение</label>
+              <label class="form-label form-label-select" for="loose-weight">Похудение</label>
             </li>
-            <li class="basic-options__item">
+            <li class="form-block__item">
               <input type="radio" id="add-weight" name="weight" value="add-weight">
-              <label for="add-weight">Набор массы</label>
+              <label class="form-label form-label-select" for="add-weight">Набор массы</label>
             </li>
-            <li class="basic-options__item">
+            <li class="form-block__item">
               <input type="radio" id="unknown-weight" name="weight" value="unknown-weight">
-              <label for="unknown-weight">Не знаю (Нужен ваш совет)</label>
+              <label class="form-label form-label-select" for="unknown-weight">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="contacts-info block-title">
-          <legend class="contacts-info__title legend-title">Контактные данные (владельца кота)</legend>
-          <div class="contacts-info__input">
+        <fieldset class="form-block">
+          <legend class="form-block__title block-title">Контактные данные (владельца кота)</legend>
+          <div class="form-block__input">
             <label class="form-label" for="email">E-mail:*</label>
             <input class="form-input" id="email" type="email" name="email" placeholder="кuklachev@gmail.com">
-            <svg class="contacts-info__icon" width="19" height="14" viewBox="0 0 19 14" fill="none">
+            <svg class="form-block__icon" width="19" height="14" viewBox="0 0 19 14" fill="none">
               <line x1="1.18955" y1="6" x2="1.18955" y2="14" stroke="#222222" stroke-width="1.3" />
               <line x1="18.1896" y1="6" x2="18.1896" y2="14" stroke="#222222" stroke-width="1.3" />
               <line x1="0.539551" y1="13.35" x2="18.5396" y2="13.35" stroke="#222222" stroke-width="1.3" />
@@ -98,10 +99,10 @@
             </svg>
           </div>
 
-          <div class="contacts-info__input">
+          <div class="form-block__input">
             <label class="form-label" for="phone">Телефон:*</label>
             <input class="form-input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
-            <div class="contacts-info__icon">
+            <div class="form-block__icon">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <g clip-path="url(#clip0)">
                   <path d="M17.7561 9.4H9.61816V10.6H17.7561L15.7455 12.7L16.6072 13.6L19.5752 10.5C19.6684 10.3702 19.7188 10.2123 19.7188 10.05C19.7188 9.88772 19.6684 9.72982 19.5752 9.6L16.6072 6.5L15.7455 7.4L17.7561 9.4Z" fill="black" />
@@ -119,29 +120,29 @@
           </div>
         </fieldset>
 
-        <fieldset class="comment-info block-title">
-          <legend class="comment-info__title legend-title">Комментарий</legend>
-          <textarea class="comment-info__input comment-info-input" name="comment" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
+        <fieldset class="form-block">
+          <legend class="form-block__title block-title">Комментарий</legend>
+          <textarea class="form-block__input form-block-input" name="comment" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="additional-info block-title">
-          <legend class="additional-info__title legend-title">Дополнительно</legend>
-          <ul class="additional-info__list">
-            <li class="additional-info__item">
+        <fieldset class="form-block">
+          <legend class="form-block__title block-title">Дополнительно</legend>
+          <ul class="form-block__list">
+            <li class="form-block__item">
               <input type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="additional-info__label" for="sweetener">Сахарозаменитель</label>
+              <label class="form-label form-label-select" for="sweetener">Сахарозаменитель</label>
             </li>
-            <li class="additional-info__item">
+            <li class="form-block__item">
               <input type="checkbox" name="water" id="water">
-              <label class="additional-info__label" for="water">Питьевая вода</label>
+              <label class="form-label form-label-select" for="water">Питьевая вода</label>
             </li>
-            <li class="additional-info__item">
+            <li class="form-block__item">
               <input type="checkbox" name="milk" id="milk">
-              <label class="additional-info__label" for="milk">Молоко</label>
+              <label class="form-label form-label-select" for="milk">Молоко</label>
             </li>
-            <li class="additional-info__item">
+            <li class="form-block__item">
               <input type="checkbox" name="vitamins" id="vitamins">
-              <label class="additional-info__label" for="vitamins">Витамины</label>
+              <label class="form-label form-label-select" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
