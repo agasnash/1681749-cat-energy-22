@@ -1,0 +1,65 @@
+.benefits {
+  margin-top: 27px;
+  margin-bottom: 42px;
+  padding: 0 20px;
+}
+
+.benefits__title {
+  margin: 0;
+  font-family: @special-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: @basic-black;
+  text-align: left;
+  padding-bottom: 38px;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits__item {
+  position: relative;
+  min-height: 60px;
+  padding-bottom: 20px;
+}
+
+.benefits__item::before {
+  content: "";
+  position: absolute;
+  background-color: @basic-green;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+}
+
+.benefits__item--healthy::before {
+  background-image: url("../img/icon/icon_leaf.svg");
+}
+
+.benefits__item--fast::before {
+  background-image: url("../img/icon/icon_tub.svg");
+}
+
+.benefits__item--functional::before {
+  background-image: url("../img/icon/icon_eat.svg");
+}
+
+.benefits__item--useful::before {
+  background-image: url("../img/icon/icon_alarm.svg");
+}
+
+
+.benefits__item:last-child {
+  padding-bottom: 0;
+}
+
+.benefits__desc {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 2px 0 0 80px;
+}
