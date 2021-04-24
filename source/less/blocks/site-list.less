@@ -1,0 +1,25 @@
+.site-list__item {
+  border-top: 1px solid @separator-grey;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid @separator-grey;
+}
+
+.site-list__link {
+  font-family: @special-font-medium;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 65px;
+  color: @basic-black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: fade(@basic-black, 60%);
+  }
+
+  &:active {
+    color: fade(@basic-black, 30%);
+  }
+}
