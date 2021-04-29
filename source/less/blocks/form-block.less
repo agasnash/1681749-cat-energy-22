@@ -1,7 +1,7 @@
 .form-block {
   border: none;
 
-  &:nth-child(2) {
+  &--options {
     border-top: 1px solid @border-grey;
     border-bottom: 1px solid @border-grey;
   }
@@ -13,6 +13,7 @@
 
 .form-block__list {
   .reset;
+  padding: 10px  0;
 }
 
 .form-block__input {
@@ -26,4 +27,9 @@
 .form-block__item {
   margin-bottom: 33px;
   padding-left: 60px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

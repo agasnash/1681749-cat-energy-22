@@ -57,8 +57,10 @@
         <h1 class="food-program__headline headline">Подбор программы</h1>
         <p class="food-program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <h2 class="visually-hidden">Форма подбора программы</h2>
-        <form class="food-program__form" method="get" action="https://echo.htmlacademy.ru">
+      </div>
 
+      <form class="food-program__form" method="get" action="https://echo.htmlacademy.ru">
+        <div class="container">
           <fieldset class="food-program__item form-block">
             <legend class="visually-hidden">Основная информация</legend>
             <div class="form-block__wrapper-inputs">
@@ -76,25 +78,29 @@
               </div>
             </div>
           </fieldset>
+        </div>
 
-          <fieldset class="food-program__item form-block">
-            <legend class="visually-hidden">Цель программы</legend>
+        <fieldset class="food-program__item food-program__item--options form-block form-block--options">
+          <legend class="visually-hidden">Цель программы</legend>
+          <div class="container">
             <ul class="form-block__list">
               <li class="form-block__item">
-                <input class="visually-hidden form-radio-btn" type="radio" id="loose-weight" name="weight" value="loose-weight" checked>
+                <input class="visually-hidden form-radio" type="radio" id="loose-weight" name="weight" value="loose-weight" checked>
                 <label class="form-label form-label--select" for="loose-weight">Похудение</label>
               </li>
               <li class="form-block__item">
-                <input class="visually-hidden form-radio-btn" type="radio" id="add-weight" name="weight" value="add-weight">
+                <input class="visually-hidden form-radio" type="radio" id="add-weight" name="weight" value="add-weight">
                 <label class="form-label form-label--select" for="add-weight">Набор массы</label>
               </li>
               <li class="form-block__item">
-                <input class="visually-hidden form-radio-btn" type="radio" id="unknown-weight" name="weight" value="unknown-weight">
+                <input class="visually-hidden form-radio" type="radio" id="unknown-weight" name="weight" value="unknown-weight">
                 <label class="form-label form-label--select" for="unknown-weight">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
+        <div class="container">
           <fieldset class="food-program__item form-block">
             <legend class="form-block__title block-title">Контактные данные <br /> (владельца кота)</legend>
             <div class="form-block__input">
@@ -130,12 +136,12 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-block">
+          <fieldset class="food-program__item form-block">
             <legend class="form-block__title block-title">Комментарий</legend>
             <textarea class="form-input form-input--textarea" name="comment" rows="8" cols="80">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
-          <fieldset class="form-block">
+          <fieldset class="food-program__item form-block">
             <legend class="form-block__title block-title">Дополнительно</legend>
             <ul class="form-block__list">
               <li class="form-block__item">
@@ -151,7 +157,7 @@
                 <label class="form-label form-label--select" for="milk">Молоко</label>
               </li>
               <li class="form-block__item">
-                <input class="visually-hidden form-checkbox" type="disabled" name="vitamins" id="vitamins">
+                <input class="visually-hidden form-checkbox" type="checkbox" name="vitamins" id="vitamins">
                 <label class="form-label form-label--select" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -159,8 +165,9 @@
 
           <button class="food-program__button button" type="submit">Отправить заявку</button>
           <p class="food-program__desc">* — Обязательные поля</p>
-      </div>
+        </div>
       </form>
+
     </section>
 
   </main>
