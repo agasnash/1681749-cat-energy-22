@@ -1,0 +1,28 @@
+.form-checkbox + .form-label::before,
+.form-checkbox:checked + .form-label::before,
+.form-checkbox:disabled + .form-label::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: -12px;
+}
+
+.form-checkbox + .form-label::before {
+  border: 1px solid @border-elements-grey;
+  box-sizing: border-box;
+}
+
+.form-checkbox:checked + .form-label::before {
+  background-image: url("../img/icon/icon_check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-checkbox:disabled + .form-label::before {
+  background-image: url("../img/icon/icon_check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}

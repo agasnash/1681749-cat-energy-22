@@ -1,0 +1,27 @@
+.form-input {
+  border: 1px solid @border-inputs-grey;
+  font-family: @special-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: @dark-grey;
+  text-transform: uppercase;
+  padding: 13px 5px 13px 15px;
+  box-sizing: border-box;
+  outline: none;
+
+  &--textarea {
+    padding-top: 9px;
+    margin: 0;
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+  }
+
+  &:hover {
+    border: 1px solid @border-elements-grey;
+  }
+
+  &:focus {
+    border: 1px solid @dark-grey;
+  }
+}
